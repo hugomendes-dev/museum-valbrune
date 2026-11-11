@@ -8,19 +8,40 @@
   <meta name="description" content="">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
-  <!-- 1. Feuille de style de Bootstrap : à ajouter ici (voir dossier technique, § Stack et versions) -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 
-  <!-- 2. Votre feuille de style, TOUJOURS après celle de Bootstrap -->
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
-  <header>
-    <!-- En-tête et navigation -->
+  <a class="visually-hidden-focusable" href="#contenu">Aller au contenu</a>
+  <header class="sticky-top bg-white">
+    <nav class="navbar-expand-lg navbar" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo-museum-valbrune.svg" alt="Muséum de Valbrune" width="221" height="64">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+          aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
+            <li class="nav-item"><a class="nav-link" href="expositions.html">Expositions</a></li>
+            <li class="nav-item"><span class="nav-link">Agenda</span></li>
+            <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary ms-lg-3" href="infos-pratiques.html#tarifs">Billetterie</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main id="contenu">

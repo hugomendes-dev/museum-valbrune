@@ -46,7 +46,9 @@
    2. Variables de la charte (à compléter avec les codes de la planche)
    -------------------------------------------------------------------------- */
 :root {
-  /* --mv-encre: ;   */
+  --mv-encre: #1E2B33;
+  
+  
   /* --mv-lichen: ;  */
   /* ...             */
 }
@@ -56,4 +58,13 @@
    -------------------------------------------------------------------------- */
 .mv-hero {
   min-height: 440px;
+}
+
+.mv-footer {
+  background-color: var(--mv-encre);
+  color: #FFFFFF;
+}
+
+.mv-footer a {
+  color: #FFFFFF;
 }

@@ -47,7 +47,8 @@
    -------------------------------------------------------------------------- */
 :root {
   --mv-encre: #1E2B33;
-  
+  --mv-ocre: #C9842B;
+  --mv-craie: #F5F1E8;
   
   /* --mv-lichen: ;  */
   /* ...             */
@@ -60,11 +61,24 @@
   min-height: 440px;
 }
 
-.mv-footer {
+.mv-fond-encre {
   background-color: var(--mv-encre);
   color: #FFFFFF;
 }
 
-.mv-footer a {
+.mv-fond-encre a {
   color: #FFFFFF;
+}
+
+.mv-badge {
+  background-color: var(--mv-ocre);
+  color: var(--mv-encre);
+}
+
+.mv-chiffre {
+  color: var(--mv-ocre);
+}
+
+.mv-fond-craie {
+  background-color: var(--mv-craie);
 }

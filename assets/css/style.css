@@ -53,9 +53,16 @@
   --mv-encre: #1E2B33;
   --mv-ocre: #C9842B;
   --mv-craie: #F5F1E8;
-
-  /* --mv-lichen: ;  */
-  /* ...             */
+  --mv-lichen: #3D6B35;
+  --mv-lichen-fonce: #30562A;
+  --mv-ardoise: #4A5763;
+  --bs-body-font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --bs-body-font-size: 1.0625rem;
+  --bs-body-line-height: 1.6;
+  --bs-border-radius: 0.5rem;
+  --bs-body-color: var(--mv-encre);
+  --bs-link-color-rgb: 61, 107, 53;
+  --bs-link-hover-color-rgb: 48, 86, 42;
 }
 
 /* --------------------------------------------------------------------------
@@ -89,4 +96,63 @@
 
 .breadcrumb {
   --bs-breadcrumb-divider: "›";
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--mv-lichen);
+  --bs-btn-border-color: var(--mv-lichen);
+  --bs-btn-hover-bg: var(--mv-lichen-fonce);
+  --bs-btn-hover-border-color: var(--mv-lichen-fonce);
+  --bs-btn-active-bg: var(--mv-lichen-fonce);
+  --bs-btn-active-border-color: var(--mv-lichen-fonce);
+  --bs-btn-focus-shadow-rgb: 61, 107, 53;
+}
+
+h1,
+.h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+  font-size: 2.125rem;
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+  h1,
+  .h1 {
+    font-size: 3rem;
+  }
+}
+
+.small {
+  font-size: 0.875rem;
+  color: var(--mv-ardoise);
+}
+
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+}
+
+.mv-sommaire .nav-link {
+  text-decoration: underline;
+  padding-left: 0;
 }

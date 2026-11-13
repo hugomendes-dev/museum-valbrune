@@ -10,7 +10,7 @@ Projet de formation : intégration HTML5 / Bootstrap d'un site vitrine à partir
 
 ## Palier atteint
 
-- [ ] Palier 1 : Socle
+- [X] Palier 1 : Socle
 - [ ] Palier 2 : Standard
 - [ ] Palier 3 : Avancé
 
@@ -97,5 +97,7 @@ J'ai utilisé Claude (Anthropic) pendant tout le projet, comme tuteur :
 - mise en forme de ce README à partir de mes notes
 
 Lors du jour 2, Claude m'a donné pas mal de code pour le bandeau d'information et le bandeau principal. Je me suis rendu compte que ça allait un peu trop loin par rapport aux consignes du projet, et je lui ai fait remarquer. Après ça, on a repris avec une méthode basée sur des indices pour que je puisse faire le code moi-même et comprendre ce que je faisais. Une fois, après plusieurs essais de ma part, il m'a quand même montré une structure HTML pour m'aider à avancer. Je suis capable d'expliquer ce code comme le reste du site.
+
+Lors du jour 5, Claude m'a aussi donné directement les lignes de code corrigées pour régler des erreurs de copier-coller dans les attributs class des pictogrammes, notamment sur les pages Infos pratiques et Accueil. C'était de la correction de mon propre code, mais les lignes m'ont quand même été fournies par l'IA et je les ai recopiées.
 
 En dehors de ces cas, l'IA n'a produit ni le code ni les textes du site : les textes viennent des documents fournis et des réponses du client. Je sais expliquer tout ce que je rends.

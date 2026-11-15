@@ -156,3 +156,7 @@ h3,
   text-decoration: underline;
   padding-left: 0;
 }
+
+.mv-filet-ocre {
+  border-top: 4px solid var(--mv-ocre);
+}

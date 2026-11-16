@@ -160,3 +160,7 @@ h3,
 .mv-filet-ocre {
   border-top: 4px solid var(--mv-ocre);
 }
+
+html {
+    scroll-padding-top: 6.25rem;
+}

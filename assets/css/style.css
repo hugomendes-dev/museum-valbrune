@@ -63,6 +63,8 @@
   --bs-body-color: var(--mv-encre);
   --bs-link-color-rgb: 61, 107, 53;
   --bs-link-hover-color-rgb: 48, 86, 42;
+  --bs-link-color: var(--mv-lichen);
+  --bs-link-hover-color: var(--mv-lichen-fonce);
 }
 
 /* --------------------------------------------------------------------------

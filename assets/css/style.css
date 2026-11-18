@@ -47,7 +47,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   2. Variables de la charte (à compléter avec les codes de la planche)
+   2. Variables de la charte
    -------------------------------------------------------------------------- */
 :root {
   --mv-encre: #1E2B33;
@@ -61,6 +61,8 @@
   --bs-body-line-height: 1.6;
   --bs-border-radius: 0.5rem;
   --bs-body-color: var(--mv-encre);
+
+  /* Évite que les liens Bootstrap s'affichent en bleu au lieu du vert de la charte, comme dans le sommaire. */
   --bs-link-color-rgb: 61, 107, 53;
   --bs-link-hover-color-rgb: 48, 86, 42;
   --bs-link-color: var(--mv-lichen);
@@ -72,6 +74,8 @@
    -------------------------------------------------------------------------- */
 .mv-hero {
   min-height: 440px;
+  /* Garde un fond sombre si l'image du bandeau ne se charge pas, pour que le texte blanc reste lisible. */
+  background-color: var(--mv-encre);
 }
 
 .mv-fond-encre {
@@ -79,6 +83,7 @@
   color: #FFFFFF;
 }
 
+/* Évite que les liens soient difficiles à lire sur le fond foncé du footer. */
 .mv-fond-encre a {
   color: #FFFFFF;
 }
@@ -116,6 +121,8 @@ h3,
   --bs-btn-hover-border-color: var(--mv-lichen-fonce);
   --bs-btn-active-bg: var(--mv-lichen-fonce);
   --bs-btn-active-border-color: var(--mv-lichen-fonce);
+
+  /* Remplace le halo bleu par un halo vert pour rester cohérent avec les couleurs de la charte. */
   --bs-btn-focus-shadow-rgb: 61, 107, 53;
 }
 
@@ -137,8 +144,8 @@ h3,
   font-weight: 600;
 }
 
+/* Respecte les tailles de h1 prévues par la charte : 36px sur mobile et 48px sur ordinateur, avec 768px comme limite entre les deux maquettes. */
 @media (min-width: 768px) {
-
   h1,
   .h1 {
     font-size: 3rem;
@@ -150,10 +157,12 @@ h3,
   color: var(--mv-ardoise);
 }
 
+/* Souligne le lien actif comme sur la maquette pour ne pas indiquer la page uniquement avec une couleur. */
 .navbar-nav .nav-link.active {
   text-decoration: underline;
 }
 
+/* Permet d'aligner le premier lien du sommaire avec le début du contenu, comme sur la maquette. */
 .mv-sommaire .nav-link {
   text-decoration: underline;
   padding-left: 0;
@@ -163,6 +172,7 @@ h3,
   border-top: 4px solid var(--mv-ocre);
 }
 
+/* Évite que le header fixe cache le titre quand on clique sur un lien d'ancre. */
 html {
-    scroll-padding-top: 6.25rem;
+  scroll-padding-top: 6.25rem;
 }

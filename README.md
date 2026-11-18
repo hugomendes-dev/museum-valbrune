@@ -101,3 +101,25 @@ Lors du jour 2, Claude m'a donné pas mal de code pour le bandeau d'information 
 Lors du jour 5, Claude m'a aussi donné directement les lignes de code corrigées pour régler des erreurs de copier-coller dans les attributs class des pictogrammes, notamment sur les pages Infos pratiques et Accueil. C'était de la correction de mon propre code, mais les lignes m'ont quand même été fournies par l'IA et je les ai recopiées.
 
 En dehors de ces cas, l'IA n'a produit ni le code ni les textes du site : les textes viennent des documents fournis et des réponses du client. Je sais expliquer tout ce que je rends.
+
+## Checklist de recette
+
+| # | Point de contrôle | OK ? | Commentaire |
+|---|---|---|---|
+| 1 | Toutes les pages du palier visé existent et sont reliées par la navigation. | X | Les 6 pages sont créées : Accueil, Le Muséum, Expositions, Infos pratiques, Contact et Mentions légales. |
+| 2 | En-tête et pied de page identiques sur toutes les pages. | X | Même en-tête sur les 6 pages, avec uniquement le lien actif qui change. Les pieds de page sont identiques. |
+| 3 | Affichage correct à 375, 768 et 1280 px, sans barre de défilement horizontale. | X | Tests réalisés à 375, 768 et 1280 px. Correction des images des cartes avec la classe img-fluid pour conserver leurs proportions. |
+| 4 | Menu replié fonctionnel sous 992 px. | X | Menu burger testé à 768 px, il s'ouvre correctement. |
+| 5 | Validateur W3C : 0 erreur sur chaque page. | | À revalider sur les 6 pages après les dernières modifications. |
+| 6 | Un seul h1 par page, hiérarchie des titres respectée. | X | Exactement un h1 sur chacune des 6 pages. Hiérarchie des titres vérifiée. |
+| 7 | Couleurs et polices conformes à la planche. | X | Couleurs de la charte et polices Fraunces et Atkinson Hyperlegible intégrées dans le CSS. |
+| 8 | Boutons principaux et liens aux bonnes couleurs, y compris au survol. | X | Couleurs personnalisées dans le CSS pour respecter la charte graphique. |
+| 9 | Textes intégrés tels que fournis. | X | Textes repris du document Contenus, sans modification. |
+| 10 | Chaque image a un attribut alt adapté, ainsi que width et height. | X | Toutes les images ont un attribut alt, width et height adaptés. |
+| 11 | Navigation au clavier possible, focus visible, lien d'évitement présent. | X | Navigation au clavier possible, focus visible et lien d'évitement présent. |
+| 12 | Chaque champ de formulaire a un label relié. | X | Tous les champs de Contact et de la lettre d'information ont un label relié avec for et id. |
+| 13 | Tableaux avec th et scope. | X | Tous les th des deux tableaux ont un attribut scope (col ou row). |
+| 14 | Aucune ressource inutile chargée ; aucun attribut style dans le HTML. | X | Bootstrap CSS est utilisé pour la mise en page, les cartes et les boutons. Bootstrap JS est utilisé pour le menu burger, le bandeau d'information et l'accordéon de la FAQ. Aucun attribut style présent dans les 6 pages HTML. |
+| 15 | Remarques du client (sujet § 5.5) toutes traitées, questions notées dans le README. | X | Les 9 remarques du client (R1 à R9) ont été traitées. Les questions et les réponses sont notées dans le README. |
+| 16 | Commits réguliers poussés sur GitHub ; tags semaine-1 et semaine-2 présents (git ls-remote --tags origin). | | Tag semaine-1 présent depuis le 13/11. Tag semaine-2 à poser à J10. |
+| 17 | README complet. | | À terminer et à vérifier avant de rendre le projet. |

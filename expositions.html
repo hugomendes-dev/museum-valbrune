@@ -17,29 +17,26 @@
 
 <body>
   <a class="visually-hidden-focusable" href="#contenu">Aller au contenu</a>
-
   <header class="sticky-top bg-white">
     <nav class="navbar-expand-lg navbar" aria-label="Navigation principale">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="assets/img/logo-museum-valbrune.svg" alt="Muséum de Valbrune" width="221" height="64">
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
           aria-controls="menu-principal" aria-expanded="false" aria-label="Ouvrir le menu">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="menu-principal">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
             <li class="nav-item"><a class="nav-link active" href="expositions.html" aria-current="page">Expositions</a></li>
+            <!-- Le client a demandé de ne pas mettre de lien vers Agenda pour le moment, en attendant la page Agenda du palier 3. -->
             <li class="nav-item"><span class="nav-link">Agenda</span></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
-
           <a class="btn btn-primary ms-lg-3" href="infos-pratiques.html#tarifs">Billetterie</a>
         </div>
       </div>
@@ -78,6 +75,7 @@
         <article class="card mb-4">
           <div class="row g-0">
             <div class="col-md-4">
+              <!-- L'image est visible dès l'ouverture de la page, il n'est donc pas nécessaire de retarder son chargement. -->
               <img src="assets/img/expo-geants-jurassique.webp" alt="" width="800" height="600"
                 class="img-fluid rounded-start">
             </div>
@@ -155,9 +153,9 @@
 
           <div class="col-md-6">
             <article class="card h-100">
-              <img src="assets/img/expo-lumieres-sous-sol.webp" alt="" class="card-img-top" width="800" height="600"
-                loading="lazy">
-
+              <img src="assets/img/expo-lumieres-sous-sol.webp" alt="" class="card-img-top img-fluid" width="800"
+                height="600" loading="lazy">
+              <!-- Le bouton pour en savoir plus sur les expositions temporaires est prévu pour le palier 3, d'après la maquette. -->
               <div class="card-body">
                 <span class="badge rounded-pill mv-badge">Temporaire</span>
 
@@ -181,8 +179,8 @@
 
           <div class="col-md-6">
             <article class="card h-100">
-              <img src="assets/img/expo-plumes-riviere.webp" alt="" width="800" height="600" class="card-img-top"
-                loading="lazy">
+              <img src="assets/img/expo-plumes-riviere.webp" alt="" width="800" height="600"
+                class="card-img-top img-fluid" loading="lazy">
 
               <div class="card-body">
                 <span class="badge rounded-pill mv-badge">Temporaire</span>

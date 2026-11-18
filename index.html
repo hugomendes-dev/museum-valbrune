@@ -32,6 +32,7 @@
             <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="le-museum.html">Le Muséum</a></li>
             <li class="nav-item"><a class="nav-link" href="expositions.html">Expositions</a></li>
+            <!-- Le client a demandé de ne pas mettre de lien vers Agenda pour le moment, en attendant la page Agenda du palier 3. -->
             <li class="nav-item"><span class="nav-link">Agenda</span></li>
             <li class="nav-item"><a class="nav-link" href="infos-pratiques.html">Infos pratiques</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -43,16 +44,21 @@
   </header>
 
   <main id="contenu">
-    <div class="alert alert-light alert-dismissible fade show rounded-0 mb-0" role="alert">
-      <div class="container">
-        <strong>Info :</strong> Nocturne gratuite chaque jeudi premier du mois, jusqu'à 21h
+    <!-- Permet d'aligner le texte avec le logo et la croix avec le bouton Billetterie, sans le décalage horizontal ajouté par Bootstrap. -->
+    <div class="alert alert-light fade show rounded-0 mb-0 px-0" role="alert">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <strong>Info :</strong> Nocturne gratuite chaque jeudi premier du mois, jusqu'à 21h
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
       </div>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
     </div>
 
     <section class="position-relative mv-hero align-items-center d-flex">
+      <!-- Image décorative : le titre et le texte du bandeau donnent déjà les informations principales. -->
       <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
         src="assets/img/hero-grande-galerie.webp" alt="" width="1920" height="800">
+      <!-- Permet de garder le texte blanc du bandeau lisible en ajoutant un fond sombre sur l'image. -->
       <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
       <div class="container position-relative text-white py-5">
         <h1>Le Muséum de Valbrune</h1>
@@ -70,7 +76,7 @@
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <article class="card h-100">
-              <img class="card-img-top" src="assets/img/expo-geants-jurassique.webp" width="800" height="600"
+              <img class="card-img-top img-fluid" src="assets/img/expo-geants-jurassique.webp" width="800" height="600"
                 loading="lazy" alt="">
               <div class="card-body">
                 <span class="badge rounded-pill mv-badge">Permanente</span>
@@ -80,6 +86,7 @@
                   grande galerie raconte 150 millions
                   d'années en quarante pas.
                 </p>
+                <!-- Permet aux lecteurs d'écran de savoir vers quelle exposition mène chaque lien, au lieu de lire trois fois le même texte. -->
                 <a href="expositions.html">En savoir plus <span class="visually-hidden">sur Les Géants du
                     Jurassique</span> →</a>
               </div>
@@ -88,7 +95,7 @@
 
           <div class="col-md-6 col-lg-4">
             <article class="card h-100">
-              <img class="card-img-top" src="assets/img/expo-lumieres-sous-sol.webp" width="800" height="600"
+              <img class="card-img-top img-fluid" src="assets/img/expo-lumieres-sous-sol.webp" width="800" height="600"
                 loading="lazy" alt="">
               <div class="card-body">
                 <span class="badge rounded-pill mv-badge">Temporaire</span>
@@ -106,7 +113,7 @@
 
           <div class="col-md-6 col-lg-4">
             <article class="card h-100">
-              <img class="card-img-top" src="assets/img/expo-plumes-riviere.webp" width="800" height="600"
+              <img class="card-img-top img-fluid" src="assets/img/expo-plumes-riviere.webp" width="800" height="600"
                 loading="lazy" alt="">
               <div class="card-body">
                 <span class="badge rounded-pill mv-badge">Temporaire</span>

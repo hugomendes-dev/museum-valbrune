@@ -110,7 +110,7 @@ En dehors de ces cas, l'IA n'a produit ni le code ni les textes du site : les te
 | 2 | En-tête et pied de page identiques sur toutes les pages. | X | Même en-tête sur les 6 pages, avec uniquement le lien actif qui change. Les pieds de page sont identiques. |
 | 3 | Affichage correct à 375, 768 et 1280 px, sans barre de défilement horizontale. | X | Tests réalisés à 375, 768 et 1280 px. Correction des images des cartes avec la classe img-fluid pour conserver leurs proportions. |
 | 4 | Menu replié fonctionnel sous 992 px. | X | Menu burger testé à 768 px, il s'ouvre correctement. |
-| 5 | Validateur W3C : 0 erreur sur chaque page. | | À revalider sur les 6 pages après les dernières modifications. |
+| 5 | Validateur W3C : 0 erreur sur chaque page. | X | 0 erreur sur les 6 pages. |
 | 6 | Un seul h1 par page, hiérarchie des titres respectée. | X | Exactement un h1 sur chacune des 6 pages. Hiérarchie des titres vérifiée. |
 | 7 | Couleurs et polices conformes à la planche. | X | Couleurs de la charte et polices Fraunces et Atkinson Hyperlegible intégrées dans le CSS. |
 | 8 | Boutons principaux et liens aux bonnes couleurs, y compris au survol. | X | Couleurs personnalisées dans le CSS pour respecter la charte graphique. |

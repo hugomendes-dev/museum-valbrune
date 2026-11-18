@@ -11,7 +11,7 @@ Projet de formation : intégration HTML5 / Bootstrap d'un site vitrine à partir
 ## Palier atteint
 
 - [X] Palier 1 : Socle
-- [ ] Palier 2 : Standard
+- [X] Palier 2 : Standard
 - [ ] Palier 3 : Avancé
 
 ## Dépôt GitHub
@@ -23,8 +23,8 @@ Projet de formation : intégration HTML5 / Bootstrap d'un site vitrine à partir
 
 |     Tag     |   Date   |   État du projet à cette date   |
 |-------------|----------|---------------------------------|
-| semaine-1   |13/11/2026| Toutes les étapes palier 1 fait |
-| semaine-2   |          |                                 |
+| semaine-1   |13/11/2026| Toutes les étapes palier 1 faites |
+| semaine-2   |20/11/2026| Toutes les étapes du palier 2 faites |                              
 | semaine-3   |          |                                 |
 
 ## Lancer le projet
@@ -38,9 +38,9 @@ Projet de formation : intégration HTML5 / Bootstrap d'un site vitrine à partir
 
 ## Questions posées au client et réponses obtenues
 
-Question posées le 09/11/2026 :
+Questions posées le 09/11/2026 :
 
-R2 :  La signature de la direction figure sur l'organigramme, mais celui-ci n'est fourni nulle part. J'aurais donc besoin de connaître le nom et la fonction de cette personne. Pouvez-vous me les communiquer ? 
+R2 : La signature de la direction figure sur l'organigramme, mais celui-ci n'est fourni nulle part. J'aurais donc besoin de connaître le nom et la fonction de cette personne. Pouvez-vous me les communiquer ? 
 - Direction du Muséum 
 
 R3 : Concernant le tarif Famille, la « règle habituelle » n'est écrite nulle part. Pouvez-vous me préciser ce que vous considérez comme une famille ?
@@ -77,12 +77,24 @@ Lien « Agenda » dans la navigation : La page Agenda sera ajoutée plus tard au
 - Pages non conformes à la maquette : j'avais d'abord suivi uniquement les légendes, et il manquait des titres et des pictogrammes. 
 Solution : comparer chaque page avec l'image de la maquette, les légendes, les contenus et la charte avant de valider.
 
+- Sections collées à l'intérieur de la section précédente : certaines balises fermantes étaient mal placées. Solution : déplacer les balises fermantes au bon endroit et replier les sections dans VS Code avant de coller du code.
+
+- Liens du sommaire bleus au lieu d'être verts : Bootstrap appliquait sa couleur par défaut aux liens. Solution : modifier les variables CSS de Bootstrap pour utiliser les couleurs du site.
+
+- Titres cachés sous le header fixe après un clic sur un lien du sommaire : le défilement ne tenait pas compte de la hauteur du header. Solution : ajouter scroll-padding-top sur html.
+
+- Croix de fermeture du bandeau d'information mal alignée : le positionnement appliqué par Bootstrap ne respectait pas l'alignement de la grille. Solution : utiliser un container avec Flexbox et retirer la classe alert-dismissible.
+
+- Images des cartes étirées en hauteur : les images ne conservaient pas leurs proportions. Solution : ajouter la classe img-fluid pour adapter automatiquement leur hauteur à leur largeur.
+
 ## Sources consultées
 
 - Documentation officielle Bootstrap 5.3 : https://getbootstrap.com/docs/5.3/
 - MDN Web Docs : https://developer.mozilla.org/fr/
 - Documents du projet : sujet, dossier technique, contenus à intégrer, maquettes, charte graphique.
 - Réponses du client aux questions ci-dessus.
+- W3C : https://validator.w3.org/
+- WAVE : https://wave.webaim.org/
 
 ## Déclaration d'usage d'outils d'IA
 
@@ -99,6 +111,10 @@ J'ai utilisé Claude (Anthropic) pendant tout le projet, comme tuteur :
 Lors du jour 2, Claude m'a donné pas mal de code pour le bandeau d'information et le bandeau principal. Je me suis rendu compte que ça allait un peu trop loin par rapport aux consignes du projet, et je lui ai fait remarquer. Après ça, on a repris avec une méthode basée sur des indices pour que je puisse faire le code moi-même et comprendre ce que je faisais. Une fois, après plusieurs essais de ma part, il m'a quand même montré une structure HTML pour m'aider à avancer. Je suis capable d'expliquer ce code comme le reste du site.
 
 Lors du jour 5, Claude m'a aussi donné directement les lignes de code corrigées pour régler des erreurs de copier-coller dans les attributs class des pictogrammes, notamment sur les pages Infos pratiques et Accueil. C'était de la correction de mon propre code, mais les lignes m'ont quand même été fournies par l'IA et je les ai recopiées.
+
+Lors des jours 6 à 9, Claude m'a d'abord donné directement certaines variables et propriétés CSS que je ne connaissais pas, notamment --bs-link-color, --bs-btn-focus-shadow-rgb et scroll-padding-top. Nous avons ensuite repris certains points avec une méthode basée sur des indices pour que je comprenne leur fonctionnement et leur utilité. Pour certaines corrections, il m'a également fourni directement des exemples de lignes de code, notamment l'ajout de la classe img-fluid sur les images. J'ai intégré ces modifications dans mon projet et je suis capable d'expliquer leur rôle.
+
+J'ai également utilisé Claude pour vérifier une partie de la checklist directement sur mes fichiers.
 
 En dehors de ces cas, l'IA n'a produit ni le code ni les textes du site : les textes viennent des documents fournis et des réponses du client. Je sais expliquer tout ce que je rends.
 

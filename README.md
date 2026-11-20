@@ -137,5 +137,5 @@ En dehors de ces cas, l'IA n'a produit ni le code ni les textes du site : les te
 | 13 | Tableaux avec th et scope. | X | Tous les th des deux tableaux ont un attribut scope (col ou row). |
 | 14 | Aucune ressource inutile chargée ; aucun attribut style dans le HTML. | X | Bootstrap CSS est utilisé pour la mise en page, les cartes et les boutons. Bootstrap JS est utilisé pour le menu burger, le bandeau d'information et l'accordéon de la FAQ. Aucun attribut style présent dans les 6 pages HTML. |
 | 15 | Remarques du client (sujet § 5.5) toutes traitées, questions notées dans le README. | X | Les 9 remarques du client (R1 à R9) ont été traitées. Les questions et les réponses sont notées dans le README. |
-| 16 | Commits réguliers poussés sur GitHub ; tags semaine-1 et semaine-2 présents (git ls-remote --tags origin). | | Tag semaine-1 présent depuis le 13/11. Tag semaine-2 à poser à J10. |
-| 17 | README complet. | | À terminer et à vérifier avant de rendre le projet. |
+| 16 | Commits réguliers poussés sur GitHub ; tags semaine-1 et semaine-2 présents (git ls-remote --tags origin). | X | Tag semaine-1 présent depuis le 13/11. Tag semaine-2 présent depuis le 20/11. |
+| 17 | README complet. | X | Complet. |
